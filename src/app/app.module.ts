@@ -4,24 +4,32 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
-import { HeaderComponent } from './layout/header/header.component';
-import { MenubarComponent } from './layout/menubar/menubar.component';
-import { FooterComponent } from './layout/footer/footer.component';
+import { LayoutModule } from './layout/layout.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    MenubarComponent,
-    FooterComponent
   ],
   imports: [
+    /**
+     * 
+     * Módulos externos
+     * 
+     */
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    /**
+     * 
+     * Módulos internos
+     * 
+     */
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+}

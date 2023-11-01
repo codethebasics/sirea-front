@@ -1,0 +1,17 @@
+.menubar {
+    padding: 1rem;
+    display: flex;
+    font-size: 1.3rem;
+    gap: 1rem;
+
+    .menuitem {
+        color: #595a5f;
+        cursor: pointer;
+
+        &:hover {
+            span {
+                color: #222;
+            }
+        }
+    }
+}
