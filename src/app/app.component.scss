@@ -1,0 +1,35 @@
+#app {
+    height: 100%;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "menubar"
+        "main"
+        "footer";
+
+    #header,
+    #main,
+    #footer {
+        border: 1px dashed #222;
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #menubar {
+        grid-area: menubar;
+    }
+
+    #main {
+        grid-area: main;
+        overflow-y: auto;
+    }
+
+    #footer {
+        grid-area: footer;
+    }
+}
