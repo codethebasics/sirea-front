@@ -1,6 +1,7 @@
 <div class="header">
     <div class="brand">
-        <span>SIREA - Sistema de Requisição de Pagamento Ágil</span>
+        <img [src]="headerInfo.brand" alt="logo" *ngIf="headerInfo.brand.imgPath" />
+        <span>{{ headerInfo.brand.label || 'sirea' }}</span>
     </div>
     <div class="ctas">
         x

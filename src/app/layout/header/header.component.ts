@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
+import { HeaderInfo } from './header.info';
+import { getHeaderInfo } from './header.info';
 
 @Component({
   selector: 'sirea-layout-header',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  headerInfo: HeaderInfo;
 
+  constructor() {
+    this.headerInfo = getHeaderInfo(); // obtém informações estáticas do header
+  }
 }
+
